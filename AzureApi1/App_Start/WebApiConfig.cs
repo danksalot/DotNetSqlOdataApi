@@ -38,7 +38,7 @@ namespace AzureApi1
             builder.EntitySet<Product>("Products");
             builder.EntitySet<ProductModel>("ProductModels");
             builder.EntitySet<ProductCategory>("ProductCategories");
-            builder.EntitySet<ProductDescription>("ProductDesriptions");
+            builder.EntitySet<ProductDescription>("ProductDescriptions");
             builder.EntitySet<ProductModelProductDescription>("ProductModelProductDescriptions");
             config.Routes.MapODataServiceRoute("odata", "odata", builder.GetEdmModel());
         }
